@@ -3,11 +3,11 @@
 
 My role for this website was Front & Back Development with following:
 
-HTML5
-SASS
-ES6+
-Gulp 3
-PHP
-Wordpress
+HTML5,
+SASS,
+ES6+,
+Gulp 3,
+PHP,
+Wordpress,
 ACF
 
