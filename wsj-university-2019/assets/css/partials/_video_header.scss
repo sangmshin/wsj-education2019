@@ -1,0 +1,99 @@
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO HEADER %%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO HEADER %%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO HEADER %%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO HEADER %%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO HEADER %%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO HEADER %%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO HEADER %%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO HEADER %%%%%%%%%%%%%%%%%%%%%
+.video-header-wrapper {
+  height: 60vh;
+  padding-left: 0 $im;
+  padding-right: 0 $im;
+  margin-left: 0 $im;
+  margin-right: 0 $im;
+  .video-header {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center $im;
+    .header-text {
+      padding-left: 30px;
+      padding-right: 30px;
+      p {
+        line-height: 75px;
+        font-size: 70px;
+        font-family: $wsj-serif;
+        font-weight: lighter;
+        color: #fff;
+      }
+    }
+    .header-text__sub {
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 1100px;
+      p {
+        font-size: 18px;
+        font-family: $wsj-sans-serif;
+        font-weight: 500;
+        color: #fff; // font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width:1200px) {
+  .video-header-wrapper {
+    .video-header {
+      .header-text__sub {
+        width: 800px$im;
+      }
+    }
+  }
+}
+
+@media (max-width:991px) {
+  .video-header-wrapper {
+    .video-header {
+      .header-text__sub {
+        width: 70%$im;
+      }
+    }
+  }
+}
+
+@media (max-width:800px) {
+  .video-header-wrapper {
+    .video-header {
+      .header-text__sub {
+        width: 70%$im;
+      }
+    }
+  }
+}
+
+@media (max-width:600px) {
+  .video-header-wrapper {
+    .video-header {
+      .header-text__sub {
+        width: 90%$im;
+      }
+    }
+  }
+}
+
+@media (max-width:400px) {
+  .video-header {
+    .header-text {
+      p {
+        font-size: 40px $im;
+      }
+    }
+    .header-text__sub {
+      p {
+        font-size: 15px $im;
+      }
+    }
+  }
+}

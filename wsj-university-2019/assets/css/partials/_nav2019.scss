@@ -1,0 +1,142 @@
+header {
+
+  nav.navbar {
+    margin-bottom: 0;
+    background-color: black;
+
+    .loadingbar{
+      width: 0%;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:100;
+      // background-color: red;
+      height: 2px;
+      transition: all 1s ease-out;
+    }
+
+    .wsj__logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      will-change: transform;
+      background-color: black;
+      z-index: 4;
+
+      .logo-full {
+        will-change: transform;
+      }
+
+    }
+    
+    .hamburger{
+      position: absolute;
+      left: 30px;
+      z-index: 5;
+      padding: 10px;
+      cursor: pointer;
+
+      .hamburger_line{
+        display: block;
+        padding: 2px 0;
+        width: 30px;
+      }
+    }
+  }
+
+  nav.nav-items {
+    position: absolute;
+    width: 100%;
+    background: none !important;
+
+    &.fixed {
+      z-index: 5;
+      position: fixed;
+      background-color: white !important;
+      top: 53px;
+      transition: all .7s ease-out;
+      @media (min-width:575px) {
+        -moz-box-shadow: 0px 3px 5px 6px rgba(0, 0, 0, .1);
+        -webkit-box-shadow: 0px 3px 5px 6px rgba(0, 0, 0, .1);
+        box-shadow: 0px 3px 5px 6px rgba(0, 0, 0, .1);
+      }
+
+      ul {
+        margin-top: 25px;
+        margin-bottom: 9px;
+      }
+    }
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      padding-left: 0px;
+      transition: all .7s ease-out;
+
+      li {
+        margin: 0 30px;
+        list-style: none;
+        position: relative;
+        will-change: transform;
+
+        @media (max-width:768px) {
+          margin: 0 10px;
+        }
+
+        @media (max-width:768px) {
+          margin: 0 5px;
+        }
+
+        &.active {
+          font-family: 'Retina Bold', Arial, Helvetica, sans-serif;
+          font-weight: 900;
+          z-index: 10;
+        }
+
+        a {
+          padding: 20px;
+          position: relative;
+          z-index: 10;
+          transition: all .2s ease-out;
+          will-change: transform;
+          // &:hover{
+          //   color: black;
+          // }
+          
+        }
+        span.top{
+          // z-index: 0;
+          width: 100%;
+          height: 0px;
+          position: absolute;
+          bottom: -10px;
+          left:0;
+
+          &.fillup{
+          // z-index: 0;
+            height: 100%;
+          }
+        }
+        
+        span.bottom{
+          // z-index: 0;
+          width: 100%;
+          height: 0px;
+          position: absolute;
+          top: -10px;
+          left:0;
+
+          &.fillup{
+          // z-index: 0;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

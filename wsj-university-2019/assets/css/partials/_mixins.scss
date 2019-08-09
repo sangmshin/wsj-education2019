@@ -1,0 +1,111 @@
+// CTA
+%cta-professor__simple {
+  font-size: 14px;
+  display: inline;
+  color: black;
+  font-weight: bold;
+  font-family: $wsj-sans-serif;
+  background-color: transparent$im;
+  padding: 0px 0;
+  transition: padding-left .2s ease-out;
+  &:hover {
+    padding-left: 10px;
+    color: $professor-color;
+    background-color: white;
+    border-bottom: 3px solid transparent;
+  }
+}
+
+%cta-student {
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  display: inline;
+  color: #fff;
+  font-family: $wsj-sans-serif;
+  background-color: $student-color;
+  padding: 10px 25px;
+  transition: background-color .2s ease-out;
+  &:hover {
+    color: $student-color;
+    background-color: white; 
+  }
+}
+
+%cta {
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  display: inline;
+  color: #fff;
+  font-family: $wsj-sans-serif;
+  padding: 10px 25px;
+  transition: background-color .2s ease-out;
+  &:hover {
+    background-color: white$im;
+  }
+}
+
+
+
+
+%cta-professor {
+  @extend %cta-student;
+  background-color: $professor-color;
+  &:hover {
+    color: $professor-color;
+  }
+}
+
+%cta-university {
+  @extend %cta-student;
+  background-color: $university-color;
+  padding: 10px 45px;
+  &:hover {
+    color: $university-color;
+  }
+}
+
+%titleTreatment__leftAlign {
+  .header-text {
+    margin-bottom: 25px;
+    p {
+      font-size: 40px;
+      line-height: 45px;
+      font-family: $wsj-serif;
+    }
+  }
+  .header-text__sub {
+    text-align: left;
+    margin: 0 auto 40px;
+    p {
+      font-size: 16px;
+      line-height: 30px;
+      font-family: $wsj-sans-serif;
+    }
+  }
+  .box__cta {
+    p {
+      @extend %cta-professor;
+    }
+  }
+}
+
+%titleTreatment__centerAlign {
+  .header-text {
+    margin-bottom: 25px;
+    p {
+      font-size: 40px;
+      line-height: 45px;
+      font-family: $wsj-serif;
+    }
+  }
+  .header-text__sub {
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+    p {
+      font-size: 16px;
+      line-height: 30px;
+      font-family: $wsj-sans-serif;
+    }
+  }
+}

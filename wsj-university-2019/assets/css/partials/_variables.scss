@@ -1,0 +1,102 @@
+/*
+Theme Name: WSJU 2019
+Author: Sang Shin & Ruby (post Evan Rose )
+Description: Custom theme for WSJ Education website.
+Tags: WSJU, WSJ UNIVERSITY, The Wall Street Journal
+Text Domain: WSJU
+Template: WSJU 2019
+*/
+
+
+
+//----------------------------------*\
+// Breakpoints
+//----------------------------------*/
+
+$breakpoints: (
+  phone: (max-width: 699px),
+  tabletPortrait: (min-width: 700px),
+  tabletLandscape: (min-width: 900px),
+  desktop: (min-width: 1200px),
+  widescreen: (min-width: 1800px)
+);
+
+//----------------------------------*\
+// Colors
+//----------------------------------*/
+
+// WSJ COLORS
+$wsj-blue:#1885c0;
+$student-color:#ef6062;
+$professor-color:#28649a;
+$university-color:#189790;
+
+// 2019
+$home-color:#71614e;//HOME
+$stu-color:#497a65;//STUDENTS
+$pro-color:#395269;//PROFESSORS
+$uni-color:#bd6649;//UNIVERSITIES
+
+$im:!important;
+
+// Neutrals
+$white: #fff;
+$black: #000;
+$slate: #4A4A4A;
+$greyLight3: #EBEEEE;
+$greyLight2: #FBFBFB;
+$greyLight: #f4f4f4;
+$greyMed: #dee1e0;
+$greyDark: #8d9ca9;
+
+
+// Blues
+$blueLight: #B5E0EF;
+$blueMed: #4DB4DA;
+$bluePale: #91B4C0;
+$blueDark: #3C8CAA;
+
+$bergBlue: #02a3d5;
+$lightCharc: #394859;
+$darkCharc: #0c2a31;
+
+// MyMembership colors
+$color-1: #01B7CF;
+$color-2: #F08517;
+$color-3: #43BAC2;
+$color-4: #D7B289;
+$color-5: #004F6D;
+$color-6: #7ED321;
+$color-7: #5091E3;
+$color-8: #F4837C;
+$color-9: #82F5C4;
+$color-10: #5867FF;
+$color-11: #CC18B7;
+
+/* 
+CIRCLE 1. #01B7CF
+CIRCLE 2. #F08517
+CIRCLE 3. #43BAC2
+CIRCLE 4. #D7B289
+CIRCLE 5. #004F6D
+CIRCLE 6. #7ED321
+CIRCLE 7. #5091E3
+CIRCLE 8. #F4837C
+*/
+
+
+//----------------------------------*\
+// Fonts
+//----------------------------------*/
+$wsj-serif: 'EscrowBanner-Roman';
+$wsj-serif-light: 'EscrowBanner-Light';
+$wsj-sans-serif: 'Retina Book';
+$wsj-sans-serif-light: 'Retina Light';
+
+
+
+
+
+$simplonNormReg: 'SimplonNorm-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$simplonNormLight: 'SimplonNorm-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$simplonNormBold: 'SimplonNorm-Bold', Arial, 'Helvetica Neue', Helvetica, sans-serif;

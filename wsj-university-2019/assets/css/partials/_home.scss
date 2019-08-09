@@ -1,0 +1,101 @@
+
+body {
+  background-color: #edeef2;
+
+  .top-logo {
+    .wsj-logo {
+      background-color: rgb(256, 256, 256) !important;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+    }
+
+  }
+
+  .main-content {
+    background-color: #fff;
+
+    a {
+      text-decoration: none;
+    }
+
+    .header {
+      padding-top: 40px;
+      padding-top: 40px;
+
+      p.header-text {
+        font-family: $wsj-serif;
+        font-weight: bold;
+        color: #333;
+        font-size: 40px;
+      }
+
+      p.header-text__sub {
+
+        font-size: 22px;
+        font-family: $wsj-sans-serif $im;
+      }
+    }
+  }
+
+}
+
+////////////////////////// MEDIA QUERY /////////////////////////////
+////////////////////////// MEDIA QUERY /////////////////////////////
+////////////////////////// MEDIA QUERY /////////////////////////////
+////////////////////////// MEDIA QUERY /////////////////////////////
+////////////////////////// MEDIA QUERY /////////////////////////////
+////////////////////////// MEDIA QUERY /////////////////////////////
+
+@media (max-width:580px) {
+  .main-content {
+    .header {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+  }
+}
+
+@media (max-width:400px) {
+  #home {
+
+    .main-content {
+      .header {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .header-text {
+          font-size: 30px !important;
+        }
+
+        .header-text__sub {
+          font-size: 18px !important;
+        }
+      }
+
+      .lp-hero-bg {
+        margin-top: 30px !important;
+        margin-bottom: 40px !important;
+      }
+    }
+
+    .footer-wrapper {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  }
+}
+
+@media (max-width:350px) {
+  #home {
+
+    .top-logo {
+      .wsj-logo {
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

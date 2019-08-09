@@ -1,0 +1,55 @@
+.module__1 {
+  @media (max-width:575px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .section-name__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .icons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .mod1__title {
+      font-size: 27px;
+    }
+
+    .mod1__bodycopy {
+      font-size: 18px;
+    }
+  }
+  button.cta {
+    font-size: 20px;
+    padding: 5px 5px;
+    color: white;
+    width: 210px;
+    border: 2px transparent solid;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+
+    p {
+      position: relative;
+      margin-bottom: 0px;
+      z-index: 2;
+    }
+    div {
+      position: absolute;
+      background-color: white;
+      width: 250px;
+      height: 60px;
+      left: -5px;
+      top: 40px;
+      z-index: 1;
+    }
+  }
+}
+
+#search .module__1{
+  background-color: #f2f2f2;
+}

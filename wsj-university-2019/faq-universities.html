@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Wall Street Journal - FAQ: UNIVERSITIES</title>
+  <link rel='shortcut icon' type='image/x-icon' href='./dist/img/favicon.ico' />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <!-- Greensock GSAP TweenMax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+
+  <link rel="stylesheet" href="../dist/css/style.css">
+</head>
+
+<body>
+  <div id="faq" class="universities">
+
+    <header>
+      <nav class="navbar navbar-default fixed-top" role="navigation">
+        <div class="container-fluid">
+
+          <div class="row wsj__logo" style="margin-left: 0px!important;margin-right: 0px!important;">
+            <div>
+              <a href="../" title="THE FACE OF REAL NEWS – WSJ EDUCATION" rel="home">
+                <img width="260" src="../dist/img/wsj_logo.svg" class="logo-full" onerror="this.onerror=null; this.src='../dist/img/wsj_logo2.png'">
+                <img src="../dist/img/wsj_logo_short.svg" class="logo-short text-center center-block" alt="WSJ logo alternative" onerror="this.onerror=null; this.src='../dist/img/wsj_logo_short.png'">
+              </a>
+            </div>
+          </div>
+
+          <div class="hamburger d-sm-none">
+            <img id="line_1" class="hamburger_line img-responsive" src="../dist/img/hamburger_line.svg" alt="wsj logo" width="40">
+            <img id="line_2" class="hamburger_line img-responsive" src="../dist/img/hamburger_line.svg" alt="wsj logo" width="40">
+            <img id="line_3" class="hamburger_line img-responsive" src="../dist/img/hamburger_line.svg" alt="wsj logo" width="40">
+          </div>
+
+          <div class="mobile-nav d-sm-none">
+            <div class="button-wrapper">
+              <a href="../" target="_self" class="color__blk">
+                <button type="button" class="cta btn font__rm bgcolor__home text-center mb-4">
+                  <p>HOME</p>
+                  <div class="js-button-hover-bg"></div>
+                </button>
+              </a>
+
+              <a href="./students.html" target="_self" class="color__blk">
+                <button type="button" class="cta btn font__rm bgcolor__stu text-center mb-4">
+                  <p>STUDENTS</p>
+                  <div class="js-button-hover-bg"></div>
+                </button>
+              </a>
+
+              <a href="./professors.html" target="_self" class="color__blk">
+                <button type="button" class="cta btn font__rm bgcolor__pro text-center mb-4">
+                  <p>PROFESSORS</p>
+                  <div class="js-button-hover-bg"></div>
+                </button>
+              </a>
+
+              <a href="./universities.html" target="_self" class="color__blk">
+                <button type="button" class="cta btn font__rm bgcolor__uni text-center mb-4">
+                  <p>UNIVERSITIES</p>
+                  <div class="js-button-hover-bg"></div>
+                </button>
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </nav>
+
+
+
+
+      <nav class="nav-items">
+        <div class="row">
+          <ul class="d-none d-sm-flex">
+            <li class="font__rl">
+              <a href="../" target="_self" class="color__blk">
+                HOME
+              </a>
+            </li>
+            <li class="font__rl">
+              <a href="./students.html" target="_self" class="color__blk">
+               STUDENTS
+              </a>
+            </li>
+            <li class="font__rl">
+              <a href="./professors.html" target="_self" class="color__blk">
+               PROFESSORS
+              </a>
+            </li>
+            <li class="font__rl">
+              <a href="./universities.html" target="_self" class="color__blk">
+                UNIVERSITIES
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- NAV -->
+    </header>
+
+
+
+
+    <!-- SOCIAL-TAKEOVER FULL PAGE ON MOBILE -->
+    <div class="social-takeover">
+      <div class="social-takeover__close">
+        <span class="social-takeover__close-button" data-sharemenu-action="close" data-target="shareScrim" aria-label="close" data-sharemenu-init="true"
+          data-share-toggle-init="true">
+          <svg style="fill: #999" class="shareSVG shareSVG--close" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.9 22">
+            <polygon id="XMLID_4_" points="12.2,11 12.2,10.9 21.9,1.2 20.7,0 10.9,9.7 1.2,0 0,1.2 9.7,10.9 9.7,11 9.7,11.1
+              0,20.8 1.2,22 10.9,12.3 20.7,22 21.9,20.8 12.2,11.1 "></polygon>
+          </svg>
+        </span>
+      </div>
+      <div class="social-icons">
+        <ul>
+          <li class="social-modal__facebook">
+            <a target="_blank" href="https://www.facebook.com/wsj/">
+              <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="10.5" height="22.5" viewBox="0 0 10.5 22.5">
+                <path d="M10.1 11.3H6.9v11.2H2.2V11.3H0v-4h2.2V4.7C2.2 2.9 3.1 0 7 0h3.5v3.9H7.9c-.4 0-1 .2-1 1.1v2.3h3.6l-.4 4z"></path>
+              </svg>
+              <p> FACEBOOK</p>
+            </a>
+          </li>
+          <li class="social-modal__twitter">
+            <a target="_blank" href="https://twitter.com/WSJ">
+              <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="21.1" height="17.4" viewBox="0 0 21.1 17.4">
+                <path d="M18.9 4.3v.6c0 5.8-4.3 12.5-12.3 12.5-2.4 0-4.7-.7-6.6-2 .3 0 .7.1 1 .1 2 0 3.9-.7 5.4-1.9-1.9 0-3.5-1.3-4-3 .3 0 .5.1.8.1.4 0 .8-.1 1.1-.2-2-.4-3.5-2.2-3.5-4.3v-.1c.6.3 1.2.5 2 .5C1.6 5.9.9 4.5.9 3c0-.8.2-1.6.6-2.2 2.1 2.7 5.3 4.4 8.9 4.6-.1-.3-.1-.7-.1-1C10.3 2 12.2 0 14.6 0c1.2 0 2.4.5 3.1 1.4 1-.2 1.9-.6 2.7-1.1-.3 1-1 1.9-1.9 2.4.9-.1 1.7-.3 2.5-.7-.5.9-1.3 1.7-2.1 2.3"></path>
+              </svg>
+              <p>TWITTER</p>
+            </a>
+          </li>
+          <li class="social-modal__linkedin">
+            <a class="linkedin-share" target="_blank" href="https://www.linkedin.com/groups/4093806/profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280.1 279.5">
+                <defs>
+                  <style>
+                    .cls-111 {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <title>LinkedIn</title>
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Linkedin">
+                    <g id="linkedin-linkedin">
+                      <path class="cls-111" d="M4.7,92.8H62.8V279.5H4.7ZM33.7,0A33.6,33.6,0,1,1,0,33.6,33.61,33.61,0,0,1,33.7,0" />
+                      <path class="cls-111" d="M99.2,92.8h55.6v25.5h.8c7.7-14.7,26.7-30.2,54.9-30.2,58.7,0,69.6,38.7,69.6,88.9V279.4h-58V188.7c0-21.6-.4-49.5-30.2-49.5-30.2,0-34.8,23.6-34.8,48v92.3h-58V92.8Z"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <p>LINKEDIN</p>
+            </a>
+          </li>
+          <li class="social-modal__email">
+            <a href="mailto:?subject=I%20would%20like%20to%20share%20WSJ%E2%80%99s%20Education%20program%20with%20you.&body=https://education.wsj.com">
+              <svg class="shareSVG shareSVG--email" viewBox="0 0 21 15" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.3.8l-9.6 7-9.5-7h19zM.7 2.4l6 4.5-6 7V2.3zm.8 12.4l6.3-7.2 3 2.2 2.8-2.2 6.3 7.2H1.4zm19.2 0zm0-1l-6-7 6-4.4V14z"
+                  fill-rule="evenodd"></path>
+              </svg>
+              <p>EMAIL</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- SOCIAL TAKE OVER ON MOBILE -->
+
+
+
+
+
+    <div class="container-fluid hero"></div>
+    <!-- video-header-wrapper -->
+
+
+    <!-- <div class="hr__home"></div> -->
+
+
+
+
+
+
+
+    <!-- MAIN CONTAINER -->
+    <div class="main-content">
+
+
+
+
+    <!-- FAQ -->
+      <section class="activate pb-1 pt-0 pt-xs-5 pt-sm-5">
+
+        <div class="container">
+          <div class="row pt-5 pb-1">
+            <div class="title__wrapper ml-auto mr-auto text-center">
+              <div class="headline mb-3">
+                <h1 class="font__rb pt-5">
+                  FAQ
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="row search-option d-none d-sm-flex text-center ml-auto mr-auto mb-4 mb-xs-5 mb-sm-5 pb-3">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 mt-2 mb-2">
+              <a href="./faq-students.html" target="_self">
+                <button class="btn font__rl">
+                  STUDENTS
+                </button>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 mt-2 mb-2">
+              <a href="./faq-professors.html" target="_self">
+                <button class="btn font__rl">
+                  PROFESSORS
+                </button>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 mt-2 mb-2">
+              <a href="#" target="_self">
+                <button class="btn font__rl active">
+                  UNIVERSITIES
+                </button>
+              </a>
+            </div>
+          </div>
+
+          
+
+          <div class="row d-sm-none">
+            <div class="col font__rm text-center mt-2 mb-5">
+              <select id="themes-select" class="text-center">
+                <option value="students">
+                  STUDENTS
+                </option>
+                <option value="professors">
+                  PROFESSORS
+                </option>
+                <option value="universities" selected>
+                  UNIVERSITIES
+                </option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- FAQ -->
+
+
+
+
+      <section class="faqs">
+        <div class="container pt-2 pb-5">
+          
+          
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                What is The Wall Street Journal?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                The Wall Street Journal is a global news organization that provides leading news, information, commentary and analysis. Published by Dow Jones, The Wall Street Journal engages readers across print, digital, mobile, social and video. Building on its heritage as the preeminent source of global business and financial news, the Journal includes coverage of U.S. and world news, politics, culture and more.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                What is a WSJ School-Sponsored Membership?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                A WSJ School-Sponsored Membership provides a school with a simple way to deliver individual WSJ digital memberships to students, faculty and staff. Each membership includes full WSJ.com access, WSJ mobile and tablet apps and a WSJ+ membership. Also accessible on WSJ.com is a 90-day archive of the print paper.
+                <br/>
+                <br/>
+                Individual WSJ digital memberships allow users to do company research, follow comprehensive global news, track financial markets, receive newsletters and much more. There are also teaching tools and resources available for faculty to help integrate content into the curriculum.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                What are the benefits of a WSJ School-Sponsored Membership?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+                <ul class="font__rl">
+                  Secure login to WSJ.com, plus mobile and tablet apps
+                  Integration of WSJ.com content into your Learning Management System
+                  Easy implementation, use and data reporting
+                  WSJ marketing support through search and social to increase program awareness and activation
+                  Individual personalization for students
+                  No direct expense for students
+                </ul>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                How does The Wall Street Journal help push activation among students, staff and faculty?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                When an institution signs up for a school-sponsored membership, WSJ will provide support to encourage student activation, including customized marketing materials for you to promote through your university’s channels. Additionally, WSJ will provide a dedicated WSJ contact to support implementation, provide marketing materials and direct any service-related questions.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                What are the implementation options?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                All WSJ site license schools receive a unique partnership URL, which their students, faculty and staff can register digital WSJ access. The process in which we set up this URL and how we authenticate users is called implementation. This process typically takes 2-3 weeks for new site license schools. WSJ's preferred implementation method is through the school's single sign-on (SSO) portal. This method authenticates users through the school's single sign-on platform.
+                <br/>
+                <br/>
+                If your university cannot support SSO at this time, we will work to set up your university via our alternative implementation method.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                How long does a typical implementation take?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                Once an implementation option is selected, the average implementation takes 2–3 weeks for new clients.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                When a university subscribes, what content archive is included?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                The school-sponsored education membership gives a four-year archive for electronic content. WSJ.com is available in the U.S., Asia, Europe and India editions, and is easily convertible into Chinese and Japanese languages. It is the same full access that any regular consumer would subscribe to, just at a very low education price. To learn more about The Wall Street Journal, please visit <a href="https://www.dowjones.com/products/wsj/" target="_blank" class="fontcolor__uni font__rm">dowjones.com/products/wsj/</a>.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                How does a school access content preceding the four-year electronic archive?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                If schools are looking for WSJ access previous to the four-year archive, another Dow Jones product, Factiva, has the WSJ archive back to 1979. To learn more about Factiva, please visit <a href="https://www.dowjones.com/products/factiva/" target="_blank" class="fontcolor__uni font__rm">dowjones.com/products/factiva/</a>.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                What is searchable on WSJ.com?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                In the “<a href="https://www.wsj.com/search/term.html?isAdvanced=true" target="_blank" class="fontcolor__uni font__rm">Advanced Search</a>,” readers can search WSJ articles, blogs, videos and press releases. The search allows for up to a four-year archive of results.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                Can interested universities have trial access?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                WSJ can issue up to 10 individual digital-trial memberships per institution for decision makers. This is for interested universities/libraries to review the product. Trial access is complimentary.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                Can a university license for individual departments only, such as a business school?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                Our university wide pricing is our highest volume discount and aims to meet a growing need to serve all students with a credible and personalized news source at an affordable price. There is an option to restrict access to a specific college/school at a slightly higher rate per user. WSJ can provide a comparison of the costs per individual school and university wide.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                How do schools receive quotes and additional information for school-sponsored memberships?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                Schools may request more information from their WSJ representative by completing the “<a href="https://education.wsj.com/universities/" target="_self" class="fontcolor__uni font__rm">Contact Your Rep</a>” section on this site.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                How long is a subscription term and when does it start?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                A university can start at any date. The standard contract runs one calendar year.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+               What is the pricing basis?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                Standard pricing is based on the university’s student headcount.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          <div class="faq__wrapper row mt-4 mb-4 p-4 bgcolor__lgrey">
+            <div class="question__wrapper">
+              <h3 class="font__rm">
+                Are WSJ-School Sponsored Memberships available outside of the U.S.?
+              </h3>
+            </div>
+            <div class="answer__wrapper">
+              <p class="font__rl">
+                Yes, they are available internationally. Please contact <a href="mailto:partnersubs@dowjones.com" target="_blank" class="fontcolor__uni font__rm">partnersubs@dowjones.com</a> for more details.
+              </p>
+            </div>
+            <img width="26" class="toggleBtn" src="../dist/img/faq-toggle.svg" alt="open and close"/>
+          </div>
+          
+        </div>
+      </section>
+
+
+
+
+    </div>
+    <!-- MAIN-CONTENT -->
+
+
+
+
+
+
+
+    <footer>
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          
+          <div class="col-md-12 col-lg-12 col-xl-4 text-center mb-4">
+            <img src="../dist/img/djlogo.png" alt="Dow Jones | Wall Street Journal" >
+          </div>
+
+          <div class="col-md-12 col-lg-12 col-xl-8 text-white">
+            <div class="row">
+              <div class="footer-nav__col col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-nav__main">
+                  <h5 class="font__rl">
+                    WJS Education
+                  </h5>
+                </div>
+                <div class="footer-nav__sub">
+                  <div>
+                    <p class="font__rl">
+                      <a href="../index.html" target="_self">
+                        Home
+                      </a>
+                    </p>
+                    <p class="font__rl">
+                      <a href="./students.html" target="_self">
+                        Students
+                      </a>
+                    </p>
+                    <p class="font__rl">
+                      <a href="./professors.html" target="_self">
+                        Professors
+                      </a>
+                    </p>
+                    <p class="font__rl">
+                      <a href="./universities.html" target="_self">
+                        Universities
+                      </a>
+                    </p>
+                    <p class="font__rl">
+                      <a href="https://www.wsj.com" target="_blank">
+                        Become a Member
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <img width="26" class="toggleBtn  d-sm-none" src="../dist/img/footer-toggle.svg" alt="open and close"/>
+              </div>
+              <div class="footer-nav__col col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-nav__main">
+                  <h5 class="font__rl">
+                    FAQ
+                  </h5>
+                </div>
+                <div class="footer-nav__sub">
+                  <div>
+                    <p class="font__rl">
+                      <a href="./faq-students.html" target="_self">
+                        Students
+                      </a>
+                    </p>
+                    <p class="font__rl">
+                      <a href="./faq-professors.html" target="_self">
+                        Professors
+                      </a>
+                    </p>
+                    <p class="font__rl">
+                      <a href="./faq-universities.html" target="_self">
+                        Universities
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <img width="26" class="toggleBtn  d-sm-none" src="../dist/img/footer-toggle.svg" alt="open and close"/>
+              </div>
+              <div class="footer-nav__col col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-nav__main">
+                  <h5 class="font__rl">
+                    Contact Us
+                  </h5>
+                </div>
+                <div class="footer-nav__sub">
+                  <div>
+                    <p class="font__rl">
+                      1-800-JOURNAL<br/>
+                      (1-800-568-7625)
+                    </p>
+                    <p class="font__rl">
+                      <a href="mailto:email@wsjedu.com" target="_blank">
+                        email@wsjedu.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <img width="26" class="toggleBtn  d-sm-none" src="../dist/img/footer-toggle.svg" alt="open and close"/>
+              </div>
+              <div class="footer-nav__col col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-nav__main">
+                  <h5 class="font__rl">
+                    Follow Us
+                  </h5>
+                </div>
+                <div class="footer-nav__sub">
+                  <div>
+                    <p class="font__rl">
+                      <a href="https://www.facebook.com/wsj" target="_blank">
+                        Facebook
+                      </a>
+                    </p>
+                    <p class="font__rl">
+                      <a href="https://www.twitter.com/wsj" target="_blank">
+                        Twitter
+                      </a>
+                    </p>
+                    <p class="font__rl">
+                      <a href="https://www.linkedin.com/groups/4093806/" target="_blank">
+                        LinkedIn
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <img width="26" class="toggleBtn  d-sm-none" src="../dist/img/footer-toggle.svg" alt="open and close"/>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row text-center mt-5">
+          <div class="col text-white font__rl">
+            <p class="disclaimer">@Copyright 2019 Dow Jones & Company, Inc. All Rights Reserved</p>
+            <p class="disclaimer">www.dowjones.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  </div>
+  <!-- PROFESSOR -->
+
+
+  <!-- <script src="./partials/validator.js"></script> -->
+  <!-- <script src="./partials/contact-2.js"></script> -->
+  <script src="../dist/js/custom.js"></script>
+</body>
+
+</html>

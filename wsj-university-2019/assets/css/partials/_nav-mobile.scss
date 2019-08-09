@@ -1,0 +1,44 @@
+.mobile-nav{
+  position: absolute;
+  left: 0%;
+  right: 0;
+  left: -120%;
+  top: 0;
+  bottom: 0;
+  background-color: #222;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  button.cta {
+    font-size: 20px;
+    padding: 5px 5px;
+    color: white;
+    width: 210px;
+    border: 2px transparent solid;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    display: block;
+
+    p {
+      position: relative;
+      margin-bottom: 0px;
+      z-index: 2;
+    }
+    div {
+      position: absolute;
+      background-color: white;
+      width: 250px;
+      height: 60px;
+      left: -5px;
+      top: 40px;
+      z-index: 1;
+    }
+  }
+
+}

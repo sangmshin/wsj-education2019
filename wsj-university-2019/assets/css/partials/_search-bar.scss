@@ -1,0 +1,197 @@
+.search-bar{
+  &.fixed{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+    -moz-box-shadow: 0px -3px 5px 2px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0px -3px 5px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0px -3px 5px 2px rgba(0, 0, 0, .2);
+  }
+
+  .wrapper, .searchform__wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      @media(max-width:768px){
+        display: block;
+      }
+      @media(max-width:576px){
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      & > p{
+        white-space: nowrap;
+        @media(max-width:768px){
+          display: block !important;
+          padding-bottom: 12px;
+        }
+        @media(max-width:576px){
+          padding-bottom: 12px;
+          white-space: initial;
+        }
+      }
+
+      a {
+        color: white;
+        text-decoration: underline !important;
+        &:hover{
+          color: #ddd;
+        }
+      }
+
+      
+
+      form#searchform {
+        width: 400px;
+
+        @media(max-width:768px){
+          width: 100%;
+        }
+
+        .search-box__wrapper {
+          position: relative;
+          overflow: hidden;
+
+          .fancy-placeholder {
+            position: absolute;
+            z-index: 4;
+            top: 6px;
+            left: 15px;
+            color: lightgrey;
+            transition: all .2s ease-in-out;
+
+            &.disappear {
+              top: -22px;
+            }
+          }
+
+          .search-box {
+            font-size: 14px;
+            border-radius: .25rem;
+
+            &:focus{
+              &::placeholder { 
+                transform:translateY(-200%);
+                transition: all .2s ease-out;
+              }
+            }
+            &:not(:focus){
+              &::placeholder { 
+                transform:translateY(0%);
+                transition: all .1s ease-in;
+              }
+            }
+
+            &::placeholder { 
+              color: grey;
+            }
+            &:-ms-input-placeholder { 
+              color: grey;
+            }
+            &::-ms-input-placeholder { 
+              color: grey;
+            }
+
+            &:focus {
+              border: 1px #999 solid;
+              box-shadow: none;
+            }
+          }
+
+          button#searchsubmit {
+            font-size: 16px;
+            padding: 2px 17px;
+            border: none !important;
+            position: relative;
+            overflow: hidden;
+            z-index: 3;
+
+            p {
+              position: relative;
+              margin-bottom: 0px;
+              z-index: 2;
+            }
+            div {
+                position: absolute;
+                background-color: white;
+                width: 250px;
+                height: 60px;
+                left: -5px;
+                top: 50px;
+                z-index: 1;
+            }
+          }
+        }
+      }
+
+      // UNIVERSITIES -- SEARCH BAR REGION
+      .form-inner.search-box__wrapper__region{
+        display: flex;
+        justify-content: center;
+
+        .region__wrapper{
+          @media (max-width:575px) {
+            width: 70%;
+            padding-right: 15px;
+          }
+       
+          select#state{
+            width: 300px;
+            height: 35px;
+            padding-left: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-size: 14px;
+            margin: 0px;
+            border-radius: .25rem;
+
+            @media (max-width:575px) {
+              width: 100%;
+            }
+          }
+        }
+
+        button#searchsubmit {
+            font-size: 16px;
+            padding: 2px 17px;
+            border: none !important;
+            position: relative;
+            overflow: hidden;
+            z-index: 3;
+
+            p {
+              position: relative;
+              margin-bottom: 0px;
+              z-index: 2;
+            }
+            div {
+                position: absolute;
+                background-color: white;
+                width: 250px;
+                height: 60px;
+                left: -5px;
+                top: 50px;
+                z-index: 1;
+            }
+          }
+      }
+
+      #datafetch{
+        p{
+          font-size: 20px;
+          margin-bottom: 0px;
+          a{
+            text-decoration: none !important;
+            // font-family: 'Retina Medium';
+            &:hover{
+              color: #fbb374;
+            }
+            // color: $theme-color !important;
+          }
+        }
+      }
+  }
+}

@@ -1,0 +1,116 @@
+@mixin Two_Column_Module($bgposition:center, $bgposition-grapevine:center) {
+    .container {
+
+        .mod__texts {
+            background-color: transparent;
+            padding-left: 100px;
+            padding-right: 100px;
+            min-height: 330px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media (max-width:1199px) {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+
+            @media (max-width:991px) {
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+            @media (max-width:768px) {
+                min-height: initial;
+            }
+            .mod__title {
+                font-size: 30px;
+            }
+
+            .mod__bodycopy {
+                font-size: 19px;
+            }
+
+            button.cta {
+                font-size: 20px;
+                width: 180px;
+                padding: 5px 5px;
+                border: 2px transparent solid;
+                position: relative;
+                overflow: hidden;
+                z-index: 3;
+
+                p {
+                    position: relative;
+                    margin-bottom: 0px;
+                    z-index: 2;
+                }
+                div {
+                    position: absolute;
+                    background-color: white;
+                    width: 250px;
+                    height: 60px;
+                    left: -5px;
+                    // top: -5px;
+                    top: 40px;
+                    z-index: 1;
+                }
+            }
+        }
+
+        .mod__img {
+            background-color: transparent;
+            background-position: $bgposition-grapevine center;
+            background-repeat: no-repeat;
+
+            @media (max-width:991px) {
+                background-position: $bgposition center;
+            }
+        }
+    }
+}
+
+#students {
+    .two-col-mod__1 {
+        @include Two_Column_Module()
+    }
+
+    .two-col-mod__2 {
+        @include Two_Column_Module()
+    }
+
+    .two-col-mod__3 {
+        @include Two_Column_Module(0%, 0%)
+    }
+}
+
+#professors {
+    .two-col-mod__1 {
+        @include Two_Column_Module(10%)
+    }
+
+    .two-col-mod__2 {
+        @include Two_Column_Module(25%)
+    }
+
+    .two-col-mod__3 {
+        @include Two_Column_Module()
+    }
+
+    .two-col-mod__4 {
+        @include Two_Column_Module(0%)
+    }
+}
+
+#universities {
+    .two-col-mod__1 {
+        @include Two_Column_Module()
+    }
+
+    .two-col-mod__2 {
+        @include Two_Column_Module(12%)
+    }
+
+    .two-col-mod__3 {
+        @include Two_Column_Module(50%)
+    }
+}

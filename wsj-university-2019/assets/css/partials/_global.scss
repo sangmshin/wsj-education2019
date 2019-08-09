@@ -1,0 +1,271 @@
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none $im;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.black-text {
+  color: #000;
+}
+
+.grey-text {
+  color: #272727;
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hr-inpage {
+  border-top: #a1a1a1 solid 1px;
+}
+
+@media (max-width:360px) {
+  .mobile-padding {
+    padding-left: 20px$im;
+    padding-right: 20px$im;
+  }
+}
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% EMAIL MODAL %%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% EMAIL MODAL %%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% EMAIL MODAL %%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% EMAIL MODAL %%%%%%%
+#modal {
+  .modal-dialog {
+    margin-top: 50vh;
+    transform: translateY(-50%) !important;
+    .modal-content {
+      border: 0px solid #fff;
+      border: 0px solid #fff;
+      border-radius: 0px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      .modal-header {
+        padding-bottom: 0px;
+        border-bottom: none;
+      }
+      .modal-body {
+        position: relative;
+        padding: 15px 100px;
+        #contact-form {
+          .controls {
+            .form-group {
+              label {
+                color: #999;
+                font-weight: 400;
+              }
+              .form-control {
+                color: #222;
+                background-color: #f4f4f4;
+                border: none;
+                border-radius: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-send {
+  color: #fff;
+  background-color: #0080c3;
+  border-color: #0080c3;
+  border-radius: 0px;
+  width: 100%;
+  &:hover {
+    color: #fff;
+    background-color: #0080c3;
+    border-color: #0080c3;
+    border-radius: 0px;
+    width: 100%;
+  }
+}
+
+@media (min-width:1200px) {
+  .modal-body {
+    padding: 15px 15px$im;
+  }
+}
+
+@media (max-width:1200px) {
+  .modal-body {
+    padding: 15px 100px$im;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #modal {
+    padding-left: 0px$im;
+    .modal-dialog {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%$im;
+    }
+    .modal-body {
+      padding: 0px 60px 15px$im;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #modal {
+    padding-left: 0px$im;
+    .modal-body {
+      // margin-left:auto; 
+      // margin-right:auto; 
+      width: 100%$im;
+      padding: 0px 30px 15px$im;
+    }
+  }
+}
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO %%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO %%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO %%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO %%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO %%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO %%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO %%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDEO %%%%%%%
+.js-modal-btn{
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    .playBtn {
+      background: url('../img/home-video-button.png') no-repeat;
+      background-position: center center;
+      background-size: contain;
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      transition: all .2s ease-out;
+
+      &:hover {
+        background: url('../img/home-video-button-over.png') no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+  }
+}
+
+
+// 2019
+.font__rl{
+  font-weight: 200;
+  font-family: 'Retina Light', Arial, Helvetica, sans-serif;
+}
+.font__rm{
+  font-weight: 400;
+  font-family: 'Retina Medium', Arial, Helvetica, sans-serif;
+}
+.font__rb{
+  font-weight: 800;
+  font-family: 'Retina Bold', Arial, Helvetica, sans-serif;
+}
+
+
+.color__blk{
+  color: black;
+}
+.hr__home{
+  border-bottom: 26px solid $home-color;
+}
+.hr__stu{
+  border-bottom: 26px solid $stu-color;
+}
+.hr__pro{
+  border-bottom: 26px solid $pro-color;
+}
+.hr__uni{
+  border-bottom: 26px solid $uni-color;
+}
+
+// THEMES COLOR
+.bgcolor__home{
+  background-color: #71614e;
+}
+.bgcolor__stu{
+  background-color: #497a65;
+}
+.bgcolor__pro{
+  background-color: #395269;
+}
+.bgcolor__uni{
+  background-color: #bd6649;
+}
+
+.bgcolor__white{
+  background-color: #fff;
+}
+.bgcolor__lgrey{
+  background-color: #f2f2f2;
+}
+.bgcolor__ivory{
+  background-color: #f6eee2;
+}
+
+// SEARCH BAR BUTTON COLOR
+.bgcolor__btn__stu{
+  background-color: #6fc496;
+}
+.bgcolor__btn__pro{
+  background-color: #60c5bc;
+}
+.bgcolor__btn__uni{
+  background-color: #fbb374;
+}
+
+
+// FONT COLOR
+.fontcolor__stu{
+  color: #497a65;
+}
+.fontcolor__pro{
+  color: #395269;
+}
+.fontcolor__uni{
+  color: #bd6649;
+}
+.fontcolor__grey{
+  color: #999;
+}
+
+
+h2.section-name {
+  font-size: 30px;
+}
+p.section-name__description {
+  font-size: 20px;
+}
+
+.is-locked {
+	overflow: hidden;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+
+
+

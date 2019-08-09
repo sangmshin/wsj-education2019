@@ -1,0 +1,163 @@
+@mixin Slider($bgcolor, $width_desktop, $width_tablet: 100%) {
+  
+  background-color: $bgcolor;
+
+  .slider {
+    display: block;
+
+    @media (max-width: 768px) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .carousel-cell {
+      width: $width_desktop;
+      margin-right: 0px;
+      counter-increment: carousel-cell;
+      overflow: hidden;
+      padding-left: 3em;
+      padding-right: 3em;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &.border__right {
+        border-right: 1px solid black;
+
+        @media (max-width:768px) {
+          border-right: none;
+        }
+      }
+
+      &.extra-padding-left{
+        @media (min-width:992px){
+          padding-left: 50px !important;
+        }
+      }
+
+      &.extra-padding-right{
+        @media (min-width:992px){
+          padding-right: 50px !important;
+        }
+      }
+
+      blockquote {
+
+        p {
+          font-size: 18px;
+        }
+      }
+
+      img{
+        width: auto;
+        margin: 20px auto;
+        max-width: 250px;
+        max-height: 110px;
+
+        @media (max-width:991px){
+          max-width: 180px;
+          max-height: 80px;
+        }
+
+        @media (max-width:575px){
+          max-width: 230px;
+          max-height: 120px;
+          display: block;
+          margin: 20px auto;
+        }
+        @media (max-width:480px){
+          max-width: 200px;
+          max-height: 100px;
+          display: block;
+          margin: 20px auto;
+        }
+      }
+
+      @media (max-width:768px) {
+        width: $width_tablet;
+        margin-right: 5px;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+      @media (max-width:575px){
+        width: 100%;
+      }
+
+    }
+
+    .flickity-page-dots {
+      bottom: -50px;
+    }
+
+    .flickity-prev-next-button {
+      display: none;
+      border-radius: 0%;
+      background: none;
+      @media (max-width:480px) {
+        display: none;
+      }
+
+      &.previous {
+        left: 0px;
+        @media (max-width:991px){
+          left: -20px;
+        }
+        @media (max-width:768px){
+          left: -10px;
+        }
+        @media (max-width:575px) {
+          left: 0px;
+        }
+
+      }
+
+      &.next {
+        right: 0px;
+        @media (max-width:991px){
+          right: -20px;
+        }
+        @media (max-width:768px){
+          right: -10px;
+        }
+        @media (max-width:575px) {
+          right: 0px;
+
+        }
+      }
+    }
+  }
+
+}
+
+
+#home{
+  .testimonials{
+    @include Slider(#f2f2f2, 49%)
+  }
+
+  .partners{
+    @include Slider(#fff, 33%, 49%)
+  }
+}
+
+#students{
+  .testimonials{
+    @include Slider(#ffffff, 49%)
+  }
+}
+
+#professors{
+  .testimonials{
+    @include Slider(#ffffff, 49%)
+  }
+}
+
+#universities{
+  .partners{
+    @include Slider(#fff, 33%, 49%)
+  }
+  .testimonials{
+    @include Slider(#f2f2f2, 49%)
+  }
+}
